@@ -5,5 +5,5 @@ CREATE TABLE exams_result (
     value VARCHAR(100) NOT NULL,
     status VARCHAR(100) NOT NULL ,
     FOREIGN KEY (exam_id) REFERENCES exams(id) ON DELETE CASCADE,
-    FOREIGN KEY (indicator_id) REFERENCES indicator(id)
+    FOREIGN KEY (indicator_id) REFERENCES indicators(id)
 );

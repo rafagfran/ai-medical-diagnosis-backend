@@ -5,5 +5,5 @@ CREATE TABLE exams_diagnostic (
     probability FLOAT NOT NULL ,
     description VARCHAR(150) NOT NULL,
     medical_validation BOOLEAN DEFAULT false,
-    FOREIGN KEY (exam_result_id) REFERENCES exam_results(id)
+    FOREIGN KEY (exam_result_id) REFERENCES exams_result(id)
 );
